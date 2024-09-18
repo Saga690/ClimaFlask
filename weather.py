@@ -33,7 +33,7 @@ def get_current_weather(lat, lon, API_key):
 
 
 def main(city_name, state_name, country_name):
-    lat, lon = get_lat_lon('Delhi', '', 'IN', api_key)
+    lat, lon = get_lat_lon(city_name, state_name, country_name, api_key)
     weather_data = get_current_weather(lat, lon, api_key)
     return weather_data
 
